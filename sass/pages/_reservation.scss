@@ -1,0 +1,23 @@
+
+.reservation {
+    background: $color-primary;
+    width: 100%;
+    height: 28rem;
+    text-align: center;
+
+
+}
+.reservation-bloc {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        padding-top: 1rem;
+        font-size: 1.7rem;
+    }
+}
