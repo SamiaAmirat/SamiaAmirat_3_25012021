@@ -1,14 +1,15 @@
-
 .restaurant {
-    width: 100%;
-    height: 146rem;
-    background: $color-primary;
-  
-    h2 {
-      padding: 3.5rem 1.5rem 1.5rem 1.5rem;
-      font-weight: 900;
-      font-size: 2.2rem;
-    }
+  width: 100%;
+  height: 146rem;
+  background: $color-primary;
+  // @include height;
+  h2 {
+    padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+    font-weight: 900;
+    font-size: 2.2rem;
+  }
+  .all-restaurants {
+    // @include all_resto;
     .card_restaurants {
       width: 90%;
       height: 31rem;
@@ -16,13 +17,14 @@
       margin: 2rem auto;
       border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
       position: relative;
+      // border: 1px solid red;
+      // @include tablet;
     }
     .photo_restau {
-      width: 100%;
-      height: 20rem;
-  
       img {
         width: 100%;
+        height: 20rem;
+        background-size: cover;
         border-radius: 1.5rem 1.5rem 0 0;
       }
       .new_restau {
@@ -34,19 +36,17 @@
         position: absolute;
         right: 1.2rem;
         top: 1.3rem;
-  
+
         p {
           text-align: center;
           line-height: 3rem;
-        
-
         }
       }
     }
-  
+
     .info_restau {
       position: relative;
-      
+
       h2 {
         font-size: 2rem;
       }
@@ -63,7 +63,7 @@
         right: 1.2rem;
         bottom: 0.4rem;
         font-size: 2.7rem;
-        
       }
     }
   }
+}
