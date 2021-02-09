@@ -1,39 +1,6 @@
-// @mixin tablet {
-    
-// @media screen and (max-width: 768px) {
+@mixin text {
 
-//     width: 43%;
-//     height: 29rem;
-// }
-
-// }
-    
-
-
-// @mixin all_resto {
-//     @media screen and (min-width: 768px) {
-//         width: 90%;
-//         display: flex;
-//         flex-wrap: wrap;
-//         margin: 0 auto;
-//     }
-// }
-// @mixin height {
-//     @media screen and (min-width: 768px) {
-//         height: 80rem;
-        
-//     }
-// }
-// @mixin h2 {
-    
-//     @media screen and (min-width: 768px) {
-//         text-align: center;
-//         &::before {
-//             content: '';
-//             border: 2px solid purple;
-//             width: 2rem;
-//             height: 1rem;
-//         }
-
-//     }
-// }
+    justify-content: space-between;
+        align-items: baseline;
+        font-family: sans-serif;
+}

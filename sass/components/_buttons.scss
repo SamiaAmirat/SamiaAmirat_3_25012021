@@ -1,4 +1,4 @@
-.reservation {
+
 
     .btn {
         background: linear-gradient(#FF79DA, #a16be0);
@@ -16,5 +16,10 @@
     box-shadow: 0rem 0.3rem 0.3rem #c2c2c2;
     text-align: center;
     margin-top: 2.5rem;
+
+    &__commande {
+        margin: 6rem 6rem;
     }
-}
+    }
+
+    
