@@ -4,14 +4,38 @@
   background: $color-primary;
   @include respond-tablet {
     height: 80rem;
-     
- }
+  }
+  @include respond-dekstop {
+    height: 93rem;
+  }
   // @include height;
   h2 {
     padding: 3.5rem 1.5rem 1.5rem 1.5rem;
     font-weight: 900;
     font-size: 2.2rem;
-    
+    &.title {
+      @include respond-tablet {
+          font-size: 3rem;
+          font-weight: 800;
+          font-family: sans-serif;
+        }
+      @include respond-dekstop {
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: sans-serif;
+        &::before,
+        &::after {
+          content: "";
+          display: inline-block;
+          background-color: $color-effect;
+          height: 2px;
+          width: 75px;
+          vertical-align: middle;
+          margin: 0 10px;
+        }
+        
+      }
+    }
   }
   .all-restaurants {
     // @include all_resto;
@@ -20,8 +44,7 @@
       margin: auto;
       display: flex;
       flex-wrap: wrap;
-       
-   }
+    }
     .card_restaurants {
       width: 90%;
       height: 31rem;
@@ -31,9 +54,10 @@
       position: relative;
       @include respond-tablet {
         width: 45%;
-        
-         
-     }
+      }
+      @include respond-dekstop {
+        height: 36rem;
+      }
     }
     .photo_restau {
       img {
@@ -41,6 +65,9 @@
         height: 20rem;
         background-size: cover;
         border-radius: 1.5rem 1.5rem 0 0;
+        @include respond-dekstop {
+          height: 25rem;
+        }
       }
       .new_restau {
         width: 8rem;
@@ -61,8 +88,6 @@
 
     .info_restau {
       position: relative;
-
-      
 
       h2 {
         font-size: 2rem;

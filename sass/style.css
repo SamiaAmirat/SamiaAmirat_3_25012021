@@ -215,7 +215,7 @@ html {
   }
 }
 .btn {
-  background: linear-gradient(#FF79DA, #a16be0);
+  background: linear-gradient(#ff79da, #a16be0);
   padding: 1.5rem;
   border-radius: 3rem;
   color: #ffff;
@@ -230,6 +230,25 @@ html {
   box-shadow: 0rem 0.3rem 0.3rem #c2c2c2;
   text-align: center;
   margin-top: 2.5rem;
+}
+.btn:hover {
+  background: linear-gradient(rgba(255, 121, 218, 0.7), rgba(161, 107, 224, 0.7));
+}
+@media screen and (min-width: 600px) {
+  .btn {
+    margin-top: 4.5rem;
+    width: 25rem;
+    height: 5rem;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    margin-top: 4rem;
+    width: 30rem;
+    height: 6rem;
+    font-size: 2rem;
+  }
 }
 .btn__commande {
   margin: 6rem auto;
@@ -250,7 +269,7 @@ header h1 {
   justify-content: center;
 }
 header img {
-  width: 150px;
+  width: 20rem;
 }
 
 .header_pages {
@@ -305,20 +324,43 @@ footer i {
   margin: 0 auto;
   background: #eaeaea;
 }
+@media screen and (min-width: 1200px) {
+  .localisation {
+    height: 6.5rem;
+  }
+}
 .localisation p {
   text-align: center;
   display: inline-block;
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .localisation p {
+    font-size: 2.1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
 }
 .localisation span {
   position: relative;
   right: 1.5rem;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1200px) {
+  .localisation span {
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+}
 
 .loc {
   line-height: 5rem;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .loc {
+    line-height: 6.5rem;
+  }
 }
 
 .reservation {
@@ -336,23 +378,60 @@ footer i {
 .reservation-bloc h2 {
   font-size: 2.2rem;
 }
+@media screen and (min-width: 1200px) {
+  .reservation-bloc h2 {
+    font-size: 3.2rem;
+  }
+}
 .reservation-bloc p {
   padding-top: 1rem;
   font-size: 1.7rem;
+}
+@media screen and (min-width: 1200px) {
+  .reservation-bloc p {
+    font-size: 2.2rem;
+  }
 }
 
 .functioning {
   width: 100%;
   height: 390px;
 }
+@media screen and (min-width: 1200px) {
+  .functioning {
+    height: 200px;
+  }
+}
 .functioning h2 {
   margin: 30px;
-  font-size: 2.2rem;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 1200px) {
+  .functioning h2 {
+    font-size: 2.8rem;
+  }
+  .functioning h2::before, .functioning h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #99e2d0;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
 }
 @media screen and (min-width: 600px) {
   .functioning .functioning-bloc {
     width: 90%;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .functioning .functioning-bloc {
+    display: flex;
+    flex-direction: row;
   }
 }
 .functioning .function-bloc {
@@ -368,6 +447,12 @@ footer i {
   box-shadow: 0rem 0.2rem 0.2rem #dddddd;
   cursor: pointer;
   position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .functioning .function-bloc {
+    margin: 0 1rem;
+    width: 90%;
+  }
 }
 .functioning .function-bloc i {
   color: #7d7d7dfb;
@@ -411,10 +496,38 @@ footer i {
     height: 80rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .restaurant {
+    height: 93rem;
+  }
+}
 .restaurant h2 {
   padding: 3.5rem 1.5rem 1.5rem 1.5rem;
   font-weight: 900;
   font-size: 2.2rem;
+}
+@media screen and (min-width: 600px) {
+  .restaurant h2.title {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: sans-serif;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurant h2.title {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: sans-serif;
+  }
+  .restaurant h2.title::before, .restaurant h2.title::after {
+    content: "";
+    display: inline-block;
+    background-color: #99e2d0;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
 }
 @media screen and (min-width: 600px) {
   .restaurant .all-restaurants {
@@ -437,11 +550,21 @@ footer i {
     width: 45%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .restaurant .all-restaurants .card_restaurants {
+    height: 36rem;
+  }
+}
 .restaurant .all-restaurants .photo_restau img {
   width: 100%;
   height: 20rem;
   background-size: cover;
   border-radius: 1.5rem 1.5rem 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .restaurant .all-restaurants .photo_restau img {
+    height: 25rem;
+  }
 }
 .restaurant .all-restaurants .photo_restau .new_restau {
   width: 8rem;

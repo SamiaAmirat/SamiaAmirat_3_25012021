@@ -11,13 +11,24 @@
     width: 80%;
     margin: 0 auto;
     padding-top: 5rem;
+    @include respond-dekstop {
+        
+    }
 
     h2 {
         font-size: 2.2rem;
+        @include respond-dekstop {
+            font-size: 3.2rem;
+            
+        }
     }
 
     p {
         padding-top: 1rem;
         font-size: 1.7rem;
+        @include respond-dekstop {
+            font-size: 2.2rem;
+            
+        }
     }
 }
