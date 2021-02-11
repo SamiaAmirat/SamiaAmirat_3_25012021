@@ -6,7 +6,13 @@
         margin: 30px;
         font-size: 2.2rem;
     }
-
+    
+    .functioning-bloc {
+        @include respond-tablet {
+           width: 90%;
+            margin: auto;
+        }
+    }
     
     .function-bloc {
         width: 90%;
@@ -21,6 +27,7 @@
         box-shadow: 0rem 0.2rem 0.2rem #dddddd;
         cursor: pointer;
         position: relative;
+        
     
 
     

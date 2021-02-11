@@ -4,3 +4,8 @@
         align-items: baseline;
         font-family: sans-serif;
 }
+
+@mixin respond-tablet {
+        @media screen and (min-width: 600px) { @content };
+}
+

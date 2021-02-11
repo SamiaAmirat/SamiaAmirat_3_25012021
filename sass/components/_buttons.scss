@@ -18,7 +18,12 @@
     margin-top: 2.5rem;
 
     &__commande {
-        margin: 6rem 6rem;
+        margin: 6rem auto;
+        display: block;
+    }
+    &:hover {
+        background: linear-gradient(rgb(255, 121, 218, 0.7), rgb(161, 107, 224, 0.7));
+
     }
     }
 
