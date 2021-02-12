@@ -33,6 +33,12 @@
 .card:hover {
   cursor: pointer;
 }
+.card:hover .card__text {
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .card:hover .check__animation {
   transform: scaleX(1);
 }
@@ -143,6 +149,9 @@ html {
   font-weight: 300;
   line-height: 2rem;
   font-size: 1.4rem;
+}
+.block_page1 .card__text p {
+  text-overflow: ellipsis;
 }
 .block_page1 .card .price {
   align-self: flex-end;
@@ -766,6 +775,7 @@ footer i {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2rem;
+  text-overflow: ellipsis;
   transition: width 300ms 150ms linear;
 }
 @media screen and (min-width: 1200px) {

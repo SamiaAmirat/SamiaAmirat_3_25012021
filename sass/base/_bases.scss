@@ -31,7 +31,12 @@
     &:hover{
         cursor: pointer;
     }
-   
+    &:hover .card__text {
+        width: 60%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
     &:hover .check__animation{
         transform: scaleX(1);
     }
