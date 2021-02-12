@@ -14,6 +14,59 @@
   margin: auto;
 }
 
+.card .check__animation {
+  display: flex;
+  background-color: #99e2d0;
+  width: 7.2rem;
+  border-radius: 0 1rem 1rem 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms 150ms linear;
+}
+.card .check__animation .checkbox {
+  color: #ffff;
+  font-size: 2.2rem;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: transform 300ms 150ms linear;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .check__animation {
+  transform: scaleX(1);
+}
+.card:hover .checkbox {
+  transform: rotate(360deg);
+}
+.card:hover .price {
+  transform: translateX(-7rem);
+}
+@keyframes menu-load {
+  0% {
+    transform: translateY(20px);
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.card:nth-of-type(1) {
+  animation: menu-load 800ms 200ms forwards;
+}
+.card:nth-of-type(2) {
+  animation: menu-load 800ms 400ms forwards;
+}
+.card:nth-of-type(3) {
+  animation: menu-load 800ms 600ms forwards;
+}
+.card:nth-of-type(4) {
+  animation: menu-load 800ms 800ms forwards;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -31,11 +84,17 @@ html {
 
 .block_page1 {
   width: 100%;
-  height: 1180px;
+  height: 118rem;
   background: #f6f6f6;
   border-radius: 3rem 3rem 0 0;
   padding: 30px 30px 40px;
   margin-top: -2rem;
+}
+@media screen and (min-width: 1200px) {
+  .block_page1 {
+    height: 60rem;
+    background: #f6f6f6;
+  }
 }
 .block_page1 .menu__text {
   position: relative;
@@ -423,6 +482,20 @@ footer i {
   }
 }
 @media screen and (min-width: 600px) {
+  .functioning h2 {
+    font-size: 2.8rem;
+  }
+  .functioning h2::before, .functioning h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #99e2d0;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 600px) {
   .functioning .functioning-bloc {
     width: 90%;
     margin: auto;
@@ -447,6 +520,12 @@ footer i {
   box-shadow: 0rem 0.2rem 0.2rem #dddddd;
   cursor: pointer;
   position: relative;
+}
+.functioning .function-bloc:hover {
+  background: #f4eefc;
+}
+.functioning .function-bloc:hover i {
+  color: #9356dc;
 }
 @media screen and (min-width: 1200px) {
   .functioning .function-bloc {
@@ -513,6 +592,20 @@ footer i {
     font-family: sans-serif;
   }
 }
+@media screen and (min-width: 600px) and (min-width: 600px) {
+  .restaurant h2.title {
+    font-size: 2.8rem;
+  }
+  .restaurant h2.title::before, .restaurant h2.title::after {
+    content: "";
+    display: inline-block;
+    background-color: #99e2d0;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .restaurant h2.title {
     font-size: 3rem;
@@ -564,6 +657,7 @@ footer i {
 @media screen and (min-width: 1200px) {
   .restaurant .all-restaurants .photo_restau img {
     height: 25rem;
+    object-fit: cover;
   }
 }
 .restaurant .all-restaurants .photo_restau .new_restau {
@@ -605,6 +699,7 @@ footer i {
   width: 100%;
   height: 35vh;
   background-size: cover;
+  background-position: center center;
 }
 
 .block_page {
@@ -614,6 +709,12 @@ footer i {
   border-radius: 3rem 3rem 0 0;
   padding: 30px 30px 40px;
   margin-top: -2rem;
+}
+@media screen and (min-width: 1200px) {
+  .block_page {
+    height: 580px;
+    background: #f6f6f6;
+  }
 }
 .block_page .menu__text {
   position: relative;
@@ -642,7 +743,8 @@ footer i {
   align-items: baseline;
   font-family: sans-serif;
 }
-.block_page .card {
+
+.card {
   width: 95%;
   height: 7.2rem;
   background: #ffff;
@@ -653,8 +755,10 @@ footer i {
   justify-content: space-between;
   padding: 0;
   position: relative;
+  box-shadow: 0 3px 8px #c2c2c2;
+  opacity: 0;
 }
-.block_page .card__text {
+.card__text {
   width: 80%;
   padding: 1.5rem 0 1.5rem 1rem;
   justify-content: space-between;
@@ -662,14 +766,33 @@ footer i {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2rem;
+  transition: width 300ms 150ms linear;
 }
-.block_page .card .price {
+@media screen and (min-width: 1200px) {
+  .card__text {
+    font-size: 1.6rem;
+    line-height: -1rem;
+  }
+}
+
+.price {
   align-self: flex-end;
   color: black;
   font-weight: 600;
   position: absolute;
   right: 1.5rem;
   bottom: 1.4rem;
+  transition: transform 300ms 150ms linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__courses {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu__courses .menu_part {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

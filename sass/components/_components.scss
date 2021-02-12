@@ -9,13 +9,18 @@
         font-size: 3.5rem;
     }
 }
+
 .block_page1 {
     width: 100%;
-    height: 1180px;
+    height: 118rem;
     background: $color-primary;
     border-radius: 3rem 3rem 0 0;
     padding: 30px 30px 40px;
     margin-top: -2rem;
+    @include respond-dekstop {
+      height: 60rem;
+      background: $color-primary;
+    }
 
     .menu__text {
         position: relative;

@@ -1,13 +1,13 @@
+
+
+
 .picture-menu {
   background-image: url(../../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   width: 100%;
   height: 35vh;
   background-size: cover;
-  //background: red;
-  //   .illustration {
-  //     width: 100%;
-  //     height: 100%;
-  //   }
+  background-position: center center;
+  
 }
 
 .block_page {
@@ -17,6 +17,10 @@
   border-radius: 3rem 3rem 0 0;
   padding: 30px 30px 40px;
   margin-top: -2rem;
+  @include respond-dekstop {
+    height: 580px;
+    background: $color-primary;
+  }
 
   .menu__text {
     position: relative;
@@ -44,6 +48,8 @@
   }
   &_text {
     @include text;
+    
+  }
   }
   .card {
     width: 95%;
@@ -56,23 +62,44 @@
     justify-content: space-between;
     padding: 0;
     position: relative;
+    @include shadow-box;
+    opacity: 0;
+  &__text {
 
-    &__text {
-      width: 80%;
-      padding: 1.5rem 0 1.5rem 1rem;
-      justify-content: space-between;
-      font-family: sans-serif;
-      font-size: 1.4rem;
-      font-weight: 300;
-      line-height: 2rem;
+    width: 80%;
+    padding: 1.5rem 0 1.5rem 1rem;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+
+    @include respond-dekstop {
+      font-size: 1.6rem;
+      line-height: -1rem;
     }
-    .price {
-      align-self: flex-end;
-      color: black;
-      font-weight: 600;
-      position: absolute;
-      right: 1.5rem;
-      bottom: 1.4rem;
+    @include check-transition-timing(width);
+  }
+  }
+
+  
+  .price {
+    align-self: flex-end;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.4rem;
+    @include check-transition-timing(transform);
+  }
+
+.menu__courses {
+  @include respond-dekstop {
+    display: flex;
+    justify-content: space-between;
+
+    .menu_part {
+      width: 100%;
     }
   }
 }

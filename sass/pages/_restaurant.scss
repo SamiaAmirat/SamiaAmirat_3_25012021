@@ -18,6 +18,19 @@
           font-size: 3rem;
           font-weight: 800;
           font-family: sans-serif;
+          @include respond-tablet {
+            font-size: 2.8rem;
+            &::before,
+            &::after {
+              content: "";
+              display: inline-block;
+              background-color: $color-effect;
+              height: 2px;
+              width: 75px;
+              vertical-align: middle;
+              margin: 0 10px;
+            }
+          }
         }
       @include respond-dekstop {
         font-size: 3rem;
@@ -67,6 +80,7 @@
         border-radius: 1.5rem 1.5rem 0 0;
         @include respond-dekstop {
           height: 25rem;
+          object-fit: cover;
         }
       }
       .new_restau {

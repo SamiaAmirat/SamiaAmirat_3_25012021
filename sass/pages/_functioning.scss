@@ -23,6 +23,19 @@
         margin: 0 10px;
       }
     }
+    @include respond-tablet {
+      font-size: 2.8rem;
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        background-color: $color-effect;
+        height: 2px;
+        width: 75px;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+    }
   }
 
   .functioning-bloc {
@@ -49,6 +62,12 @@
     box-shadow: 0rem 0.2rem 0.2rem #dddddd;
     cursor: pointer;
     position: relative;
+    &:hover {
+      background: lighten($color-tertiary, 36%) ;
+      i {
+        color: $color-tertiary;
+      }
+    }
 
     @include respond-dekstop {
       margin: 0 1rem;
