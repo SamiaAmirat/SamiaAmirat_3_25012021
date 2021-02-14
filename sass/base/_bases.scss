@@ -1,68 +1,74 @@
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .title {
-    text-align: center;
+  text-align: center;
 }
 .btn__commande {
-    margin: auto;
+  margin: auto;
 }
 .card {
-    .check__animation{
-        display: flex;
-        background-color: $color-effect;
-        width: 7.2rem;
-        border-radius: 0 1rem 1rem 0;
-        transform-origin: right;
-        transform: scaleX(0);
-        @include check-transition-timing(transform);
-        .checkbox{
-            color: $color-secondary;
-            font-size: 2.2rem;
-            margin: auto;
-            transform: rotate(0deg);
-            @include check-transition-timing(transform);
-        }
-    }
-    &:hover{
-        cursor: pointer;
-    }
-    &:hover .card__text {
-        width: 60%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-    &:hover .check__animation{
-        transform: scaleX(1);
-    }
-    &:hover .checkbox{
-        transform: rotate(360deg);
-    }
-    &:hover .price{
-        transform: translateX(-7rem);
-    }
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
 
-    @keyframes menu-load{
-        0% {
-            transform: translateY(20px);
-        }
-        75%{
-            opacity: .5;
-        }
-        100% {
-            transform: translate(0);
-            opacity: 1;
-        }
+    
+  .check__animation {
+    display: flex;
+    background-color: $color-effect;
+    width: 7.2rem;
+    border-radius: 0 1rem 1rem 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    @include check-transition-timing(transform);
+    .checkbox {
+      color: $color-secondary;
+      font-size: 2.2rem;
+      margin: auto;
+      transform: rotate(0deg);
+      @include check-transition-timing(transform);
     }
-    @for $i from 1 through (4){
-        &:nth-of-type(#{$i}){
-            animation: menu-load 800ms 200ms*$i forwards;
-        }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .card__text p,
+  &:hover .card__text h4{
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &:hover .check__animation {
+    transform: scaleX(1);
+  }
+  &:hover .checkbox {
+    transform: rotate(360deg);
+  }
+  &:hover .price {
+    transform: translateX(-7rem);
+  }
+
+  @keyframes menu-load {
+    0% {
+      transform: translateY(20px);
     }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @for $i from 1 through (4) {
+    &:nth-of-type(#{$i}) {
+      animation: menu-load 800ms 200ms * $i forwards;
+    }
+  }
 }
-
