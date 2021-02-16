@@ -4,6 +4,9 @@
   @include respond-dekstop {
     height: 200px;
   }
+  .none {
+    display: none;
+  }
 
   h2 {
     margin: 30px;
@@ -63,7 +66,7 @@
     cursor: pointer;
     position: relative;
     &:hover {
-      background: lighten($color-tertiary, 36%) ;
+      background: lighten($color-tertiary, 36%);
       i {
         color: $color-tertiary;
       }

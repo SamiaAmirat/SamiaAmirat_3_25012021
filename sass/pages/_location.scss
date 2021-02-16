@@ -1,44 +1,41 @@
 .localisation {
-    width: 100%;
-    height: 4rem;
-    margin: 0 auto;
-    background: #eaeaea;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  background: #eaeaea;
+  @include respond-dekstop {
+    height: 6.5rem;
+  }
+
+  .none {
+    display: none;
+  }
+
+  p {
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5rem;
     @include respond-dekstop {
-        height: 6.5rem;
-      
+      font-size: 2.1rem;
+      font-family: sans-serif;
+      font-weight: 500;
     }
+  }
 
-
-
-    p {
-        text-align: center;
-        display: inline-block;
-        font-size: 1.5rem;
-        @include respond-dekstop {
-            font-size: 2.1rem;
-            font-family: sans-serif;
-            font-weight: 500;
-       
-        }
+  span {
+    position: relative;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    @include respond-dekstop {
+      font-size: 2.1rem;
+      font-weight: 500;
     }
-
-    span {
-        position: relative;
-        right: 1.5rem;
-        font-size: 1.5rem;
-        @include respond-dekstop {
-            font-size: 2.1rem;
-            font-weight: 500;
-       
-        }
-    }
-    
+  }
 }
 .loc {
-    line-height: 5rem;
-    text-align: center;
-    @include respond-dekstop {
-        line-height: 6.5rem;
-      
-    }
+  line-height: 5rem;
+  text-align: center;
+  @include respond-dekstop {
+    line-height: 6.5rem;
+  }
 }

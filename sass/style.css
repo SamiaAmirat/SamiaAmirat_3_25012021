@@ -403,6 +403,9 @@ footer i {
     height: 6.5rem;
   }
 }
+.localisation .none {
+  display: none;
+}
 .localisation p {
   text-align: center;
   display: inline-block;
@@ -475,6 +478,9 @@ footer i {
   .functioning {
     height: 200px;
   }
+}
+.functioning .none {
+  display: none;
 }
 .functioning h2 {
   margin: 30px;
