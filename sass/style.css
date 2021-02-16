@@ -805,7 +805,6 @@ footer i {
 @media screen and (min-width: 1200px) {
   .card__text {
     font-size: 1.6rem;
-    line-height: -1rem;
   }
 }
 
