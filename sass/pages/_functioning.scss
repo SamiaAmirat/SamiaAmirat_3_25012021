@@ -19,7 +19,7 @@
       &::after {
         content: "";
         display: inline-block;
-        background-color: $color-effect;
+        background-color: $color-tertiary;
         height: 2px;
         width: 75px;
         vertical-align: middle;
@@ -32,7 +32,7 @@
       &::after {
         content: "";
         display: inline-block;
-        background-color: $color-effect;
+        background-color: $color-tertiary;
         height: 2px;
         width: 75px;
         vertical-align: middle;
@@ -61,14 +61,14 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    background: $color-primary;
+    background: $color-background1;
     box-shadow: 0rem 0.2rem 0.2rem #dddddd;
     cursor: pointer;
     position: relative;
     &:hover {
-      background: lighten($color-tertiary, 36%);
+      background: lighten($color-primary, 36%);
       i {
-        color: $color-tertiary;
+        color: $color-primary;
       }
     }
 
@@ -88,8 +88,8 @@
     border-radius: 50px;
     width: 30px;
     height: 30px;
-    background: $color-tertiary;
-    color: $color-secondary;
+    background: $color-primary;
+    color: $color-background2;
     font-weight: 300;
     padding: 3px 7px 2px 7px;
     position: absolute;

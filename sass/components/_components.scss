@@ -13,13 +13,13 @@
 .block_page1 {
     width: 100%;
     height: 118rem;
-    background: $color-primary;
+    background: $color-background1;
     border-radius: 3rem 3rem 0 0;
     padding: 30px 30px 40px;
     margin-top: -2rem;
     @include respond-dekstop {
       height: 60rem;
-      background: $color-primary;
+      background: $color-background1;
     }
 
     .menu__text {
@@ -42,7 +42,7 @@
             display: block;
             height: 3px;
             width: 40px;
-            background-color: #99e2d0;
+            background-color: $color-tertiary;
             margin-top: 5px;
         }
     }
@@ -54,7 +54,7 @@
 
         width: 95%;
         height: 6rem;
-        background: $color-secondary;
+        background: $color-background1;
         margin-top: 1.4rem;
         font-size: 1.6rem;
         border-radius: 1rem;
@@ -131,7 +131,7 @@
         margin: -75px 0 0 -75px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #9356dc;
+        border-top-color: $color-primary;
         -webkit-animation: spin 2s linear infinite;
         animation: spin 2s linear infinite;
       }
@@ -144,7 +144,7 @@
         bottom: 5px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #ff79da;
+        border-top-color: $color-secondary;
         -webkit-animation: spin 3s linear infinite;
         animation: spin 3s linear infinite;
       }
@@ -157,7 +157,7 @@
         bottom: 15px;
         border-radius: 50%;
         border: 3px solid transparent;
-        border-top-color: #99e2d0;
+        border-top-color: $color-tertiary;
         -webkit-animation: spin 1.5s linear infinite;
         animation: spin 1.5s linear infinite;
       }

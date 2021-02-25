@@ -20,14 +20,14 @@
     
   .check__animation {
     display: flex;
-    background-color: $color-effect;
+    background-color: $color-tertiary;
     width: 7.2rem;
     border-radius: 0 1rem 1rem 0;
     transform-origin: right;
     transform: scaleX(0);
     @include check-transition-timing(transform);
     .checkbox {
-      color: $color-secondary;
+      color: $color-background2;
       font-size: 2.2rem;
       margin: auto;
       transform: rotate(0deg);
