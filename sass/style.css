@@ -800,7 +800,6 @@ footer i {
   font-weight: 300;
   line-height: 2rem;
   text-overflow: ellipsis;
-  transition: width 300ms 150ms linear;
 }
 @media screen and (min-width: 1200px) {
   .card__text {
